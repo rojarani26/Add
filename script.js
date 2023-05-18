@@ -1,12 +1,12 @@
 var li = document.getElementsByTagName('li');
-li[2].style.backgroundColor = 'green';
+console.log(li);
+//li[1].style.backgroundColor = 'green';
+li[2].style.display = 'none';
 
-for(var i=0;i<li.length;i++){
-    li[i].style.fontWeight = 'bold';
+var list = document.querySelectorAll('li');
+list[1].style.color = 'green';
+var odd = document.querySelectorAll('li:nth-child(odd)');
+
+for(var i=0;i<odd.length;i++){
+    odd[i].style.backgroundColor = 'green';
 }
-
-var li1 = document.getElementsByClassName('group-item');
-li1[0].style.backgroundColor = 'black';
-li1[0].style.color = 'white';
-li1[0].style.fontSize = '30px';
-li1[0].style.fontWeight = 'bold';
